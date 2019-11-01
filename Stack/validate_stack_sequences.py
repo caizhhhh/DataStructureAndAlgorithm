@@ -1,6 +1,21 @@
 # coding: utf-8
 
-from my_stack import Stack
+
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return self.items == []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        self.items.pop()
+
+    def get_top(self):
+        return self.items[-1]
 
 
 class Solution:
@@ -9,7 +24,7 @@ class Solution:
         index = 0
         for item in pushed:
             stack.push(item)
-            while popped and not stack.is_empty() and popped[index] == stack.get_top():
+            while not stack.is_empty() and popped[index] == stack.get_top():
                 stack.pop()
                 index += 1
 
