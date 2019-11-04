@@ -20,6 +20,8 @@ class Stack:
 
 class Solution:
     def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
+        # if len(pushed) != len(popped):
+        # 	return False
         stack = Stack()
         index = 0
         for item in pushed:
@@ -28,7 +30,4 @@ class Solution:
                 stack.pop()
                 index += 1
 
-        if stack.is_empty():
-            return True
-        return False
-
+        return stack.is_empty()
