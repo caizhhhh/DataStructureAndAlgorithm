@@ -41,3 +41,23 @@ t2 cost time 0.08810650000000009
 t3 cost time 0.03256999999999999
 t4 cost time 0.014445800000000064
 '''
+
+
+# def test5():
+#     lst = [list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100))]
+#     return [y for x in lst for y in x]
+#
+#
+# def test6():
+#     lst = [list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100)), list(range(100))]
+#     # res = lst[0]
+#     res = []
+#     for index in range(0, len(lst)):
+#         res.extend(lst[index])
+#     return res
+#
+#
+# t5 = timeit.timeit("test5()", "from __main__ import test5", number=1000)
+# t6 = timeit.timeit("test6()", "from __main__ import test6", number=1000)
+# print('t5 cost time {}'.format(t5))
+# print('t6 cost time {}'.format(t6))
