@@ -26,5 +26,5 @@ def merge_sort(data_list):
         return merge_list
     return data_list
 
-# lst = [2, 3, 1, 10, 12, 9, 8, 100, 99, 88, 0]
-# print(merge_sort(lst))
+lst = [2, 3, 1, 10, 88, 12, 9, 8, 100, 99, 88, 0]
+print(merge_sort(lst))
